@@ -1,0 +1,45 @@
+
+
+.product-card{
+
+    // width: 331px;
+    height: 390px;
+    padding: 17px;
+    .card-body{
+        background-color: #B5B7BC;
+        width: 100%;
+        img{
+            width: -webkit-fill-available;
+            height: 320px;
+        
+        }
+    }
+
+    .card-footer{
+        text-align: left;
+
+        .title{
+            text-align: left;
+            font: normal normal  18px/20px Muli;
+            letter-spacing: 0px;
+            color: #172026;
+            padding-bottom: 6px;
+        }
+        .price{
+            text-align: left;
+font: normal normal  16px/20px Muli;
+letter-spacing: 0px;
+color: #172026;
+padding-bottom: 6px;
+        }
+
+        img{
+            padding-bottom: 6px;
+        }
+    }
+}
+
+
+.padding10{
+    padding:10px;
+}

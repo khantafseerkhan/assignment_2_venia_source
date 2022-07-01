@@ -1,0 +1,54 @@
+.product-description-head {
+    text-align: left;
+    font: normal normal 600 36px/45px Source Serif Pro;
+    letter-spacing: 0px;
+    color: #172026;
+}
+
+.product-description-section {
+
+
+
+    .title {
+        text-align: left;
+        font: normal normal 600 16px/25px Muli;
+        letter-spacing: 0px;
+        color: #172026;
+    }
+
+    .description {
+        text-align: left;
+        font: normal normal normal 16px/24px Muli;
+        letter-spacing: 0px;
+        color: #172026;
+
+
+    }
+}
+
+
+.product-details-section {
+    .title {
+        text-align: left;
+        font: normal normal 600 16px/25px Muli;
+        letter-spacing: 0px;
+        color: #172026;
+    }
+        .description {
+            text-align: left;
+        font: normal normal normal 16px/24px Muli;
+        letter-spacing: 0px;
+        color: #172026;
+
+
+           .containt-grid{
+            display: flex;
+
+            div{
+                width: 50%;
+            }
+           }
+        }
+    
+
+}

@@ -1,0 +1,99 @@
+.footermenu {
+  padding: 20px;
+}
+
+.footermenu .header {
+  text-align: left;
+  font: normal normal 600 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #172026;
+}
+
+.footermenu ul {
+  list-style: none;
+  margin-left: -37px;
+}
+
+.footermenu ul li a {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #545D63;
+  text-decoration: none;
+}
+
+.footermenu ul li p {
+  text-align: left;
+  font: normal normal normal 16px/24px Muli;
+  letter-spacing: 0px;
+  color: #545D63;
+}
+
+.footermenu ul li img {
+  margin-right: 13px;
+}
+
+.footer-bottom-container {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.footer-bottom-container .footer-bottom .logo {
+  text-align-last: center;
+  font-size: 18px;
+  letter-spacing: 10px;
+}
+
+.footer-bottom-container .footer-bottom .logo .right-slash {
+  font-size: 20px;
+  font-weight: bold;
+  color: #5C87FF;
+  letter-spacing: 0px;
+}
+
+.footer-bottom-container .footer-bottom .logo .left-slash {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-bottom-container .footer-bottom .desc-section {
+  text-align: center;
+  font: normal normal normal 14px/18px Muli;
+  letter-spacing: 0px;
+  color: #545D63;
+  padding: 8px;
+}
+
+.footer-bottom-container .footer-bottom .list-terms ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.footer-bottom-container .footer-bottom .list-terms ul li {
+  padding: 6px 28px;
+}
+
+.footer-bottom-container .footer-bottom .list-terms ul li a {
+  text-decoration: underline;
+  font: normal normal normal 14px/18px Proxima Nova;
+  letter-spacing: 0px;
+  color: #172026;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+.order-4 {
+  order: 4;
+}
+
+/*# sourceMappingURL=_footer.css.map */

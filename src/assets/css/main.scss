@@ -1,0 +1,134 @@
+@import "../../layout/header/_header.scss";
+
+@import "../../layout/footer/_footer.scss";
+
+@import "../../routing-components/products-category/hero-banner/_herobanner.scss";
+
+@import "../../routing-components/products-category/_productcategory.scss";
+
+@import "../../routing-components/products-category/filter-section/_filter.scss";
+
+@import "../../routing-components/products-category/product/_product.scss";
+
+@import "../../routing-components/single-product/images-container/_productimages.scss";
+
+@import "../../routing-components/single-product/summary-container/_productsummary.scss";
+
+@import "../../routing-components/single-product/description-container/_productdescription.scss";
+
+@import "../../routing-components/shopping-cart/added-products/_addedproduct.scss";
+
+@import "../../routing-components/shopping-cart/price-summary/_pricesummary.scss";
+
+@import "../../routing-components/shopping-cart/shipping-section/_shippingsection.scss";
+.logo {
+    text-align-last: center;
+
+    font-size: 27px;
+    letter-spacing: 10px;
+
+    .right-slash {
+        font-size: 30px;
+        font-weight: bold;
+        color: #5C87FF;
+        letter-spacing: 0px;
+
+    }
+
+    .left-slash {
+        font-size: 30px;
+        font-weight: bold;
+    }
+}
+
+.center {
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.padding14 {
+    padding: 14px;
+}
+
+.flex {
+    display: flex;
+}
+
+
+@media screen and (min-width: 1200px) {
+
+
+
+    .tab-hide {
+        display: initial;
+    }
+
+    .tab-show {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+
+    .phone-show {
+        display: none !important;
+    }
+
+    .phone-hide {
+        display: initial !important;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .phone-show {
+        display: initial !important;
+    }
+
+    .phone-hide {
+        display: none !important;
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .tab-hide {
+        display: none !important;
+    }
+
+    .tab-show {
+        display: initial !important;
+    }
+}
+
+
+.shadow {
+    box-shadow: 0px 8px 16px #00000026;
+
+}
+
+
+.border-inside-bottom-3{
+    border-bottom: 3px inset;
+}
+
+.border-inside-bottom-2{
+    border-bottom: 2px inset;
+}
+.border-inside-bottom-1{
+    border-bottom: 1px inset;
+}
+.msg{
+    font: normal normal 600 20px/25px Muli;
+    text-align: center;
+
+}

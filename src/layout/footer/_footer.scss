@@ -1,0 +1,117 @@
+.footermenu {
+    padding: 20px;
+
+    .header {
+        text-align: left;
+        font: normal normal 600 16px/24px Muli;
+        letter-spacing: 0px;
+        color: #172026;
+    }
+
+    ul {
+        list-style: none;
+        margin-left: -37px;
+
+        li {
+
+            a {
+
+
+                text-align: left;
+                font: normal normal normal 16px/24px Muli;
+                letter-spacing: 0px;
+                color: #545D63;
+
+                text-decoration: none;
+
+
+            }
+
+            p {
+                text-align: left;
+                font: normal normal normal 16px/24px Muli;
+                letter-spacing: 0px;
+                color: #545D63;
+
+            }
+
+            img {
+                margin-right: 13px;
+            }
+        }
+    }
+}
+
+
+.footer-bottom-container {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+
+    .footer-bottom {
+        .logo {
+            text-align-last: center;
+
+            font-size: 18px;
+            letter-spacing: 10px;
+
+            .right-slash {
+                font-size: 20px;
+                font-weight: bold;
+                color: #5C87FF;
+                letter-spacing: 0px;
+
+            }
+
+            .left-slash {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+
+        .desc-section {
+            text-align: center;
+            font: normal normal normal 14px/18px Muli;
+            letter-spacing: 0px;
+            color: #545D63;
+            padding: 8px;
+        }
+
+
+        .list-terms {
+
+            ul {
+                list-style: none;
+                display: flex;
+                margin:0;
+    
+                li {
+    
+                    padding: 6px 28px;
+                    a {
+                        text-decoration: underline;
+                        font: normal normal normal 14px/18px Proxima Nova;
+                        letter-spacing: 0px;
+                        color: #172026;
+                    }
+                }
+            }
+        }
+    }
+
+
+  
+
+}
+
+.order-1{
+    order: 1;
+}
+
+.order-2{
+    order: 2;
+}
+.order-3{
+    order: 3;
+}
+.order-4{
+    order: 4;
+}
