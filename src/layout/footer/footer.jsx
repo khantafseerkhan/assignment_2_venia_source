@@ -14,13 +14,13 @@ export default class Footer extends React.Component {
                 <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--3 aem-GridColumn--phone--12  footermenu">
                     <div className="header">Account</div>
                     <ul>
-                        <li><a href="javascript:void(0)">Sign in</a></li>
-                        <li><a href="javascript:void(0)">Register</a></li>
-                        <li><a href="javascript:void(0)">Order Status</a></li>
+                        <li><a href="javascript:void(0)" role='button' aria-label='Sign in'>Sign in</a></li>
+                        <li><a href="javascript:void(0)" role='button' aria-label='Register'>Register</a></li>
+                        <li><a href="javascript:void(0)" role='button' aria-label='Order Status'>Order Status</a></li>
 
-                        <li><a href="javascript:void(0)">Returns</a></li>
+                        <li><a href="javascript:void(0)" role='button' aria-label='Returns'>Returns</a></li>
 
-                        <li><a href="javascript:void(0)">Register</a></li>
+                        <li><a href="javascript:void(0)" role='button' aria-label='Register'>Register</a></li>
 
 
                     </ul>
@@ -29,8 +29,8 @@ export default class Footer extends React.Component {
                 <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--3 aem-GridColumn--phone--12  footermenu">
                     <div className="header">About Us</div>
                     <ul>
-                        <li><a href="javascript:void(0)">Our Story </a></li>
-                        <li><a href="javascript:void(0)">Careers</a></li>
+                        <li><a href="javascript:void(0)"  role='button' aria-label='Our Story'>Our Story </a></li>
+                        <li><a href="javascript:void(0)"  role='button' aria-label='Careers'>Careers</a></li>
 
 
                     </ul>
@@ -38,9 +38,9 @@ export default class Footer extends React.Component {
                 <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--3 aem-GridColumn--phone--12  footermenu">
                     <div className="header">Help</div>
                     <ul>
-                        <li><a  href="javascript:void(0)">Contact Us</a></li>
-                        <li><a href="javascript:void(0)">Order Status</a></li>
-                        <li><a href="javascript:void(0)">Returns</a></li>
+                        <li><a  href="javascript:void(0)" role='button' aria-label='Contact Us'>Contact Us</a></li>
+                        <li><a href="javascript:void(0)" role='button' aria-label='Order Status'>Order Status</a></li>
+                        <li><a href="javascript:void(0)" role='button' aria-label='Returns'>Returns</a></li>
 
 
 
@@ -56,7 +56,7 @@ export default class Footer extends React.Component {
                         </li>
                         <li>
 
-                            <a href="javascript:void(0)">
+                            <a href="javascript:void(0)"  >
                                 <img alt="Instagram Icon" src={require("../../assets/img/instagram.png")} />
                             </a>
                             <a href="javascript:void(0)">
@@ -92,8 +92,8 @@ export default class Footer extends React.Component {
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--12  footer-bottom order-2">
                         <div className="list-terms">
                             <ul>
-                                <li><a>Terms of Use</a></li>
-                                <li><a>Privacy Policy</a></li>
+                                <li><a  href="javascript:void(0)"  role='button' aria-label='Terms of Use'>Terms of Use</a></li>
+                                <li><a  href="javascript:void(0)"  role='button' aria-label='Privacy Policy'>Privacy Policy</a></li>
 
                             </ul>
                         </div>

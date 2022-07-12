@@ -8,14 +8,13 @@ var initialstate = {
   value: 10,
   allproductdata: [],
   cartProduct: localStorage.getItem("cartdata") ? JSON.parse(localStorage.getItem("cartdata")) : [],
-  totalOfall: 0,
+  totalOfall: localStorage.getItem("totalofall") ? localStorage.getItem("totalofall") : 0,
   coupon: 20,
   giftCard: 10,
   etax: 50,
   shippingCharge: 0,
   cartCount: 0
 };
-console.log("headf   " + localStorage.getItem("cartdata"));
 
 var changeTheState = function changeTheState() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialstate;
@@ -69,6 +68,7 @@ var updateCartProduct = function updateCartProduct() {
     if (index != -1) {
       temparray[index].quantity = temparray[index].quantity + action.data.quantity;
       localStorage.setItem("cartdata", JSON.stringify(temparray));
+      localStorage.setItem("totalofall", calPriceSummary(temparray));
       return {
         value: state.value,
         allproductdata: state.allproductdata,
@@ -83,6 +83,7 @@ var updateCartProduct = function updateCartProduct() {
     } else {
       temparray.push(action.data);
       localStorage.setItem("cartdata", JSON.stringify(temparray));
+      localStorage.setItem("totalofall", calPriceSummary(temparray));
       return {
         value: state.value,
         allproductdata: state.allproductdata,
@@ -104,6 +105,7 @@ var updateCartProduct = function updateCartProduct() {
       _temparray.splice(action.data, 1);
 
       localStorage.setItem("cartdata", JSON.stringify(_temparray));
+      localStorage.setItem("totalofall", calPriceSummary(_temparray));
       return {
         value: state.value,
         allproductdata: state.allproductdata,
@@ -127,6 +129,7 @@ var updateCartProduct = function updateCartProduct() {
 
     _temparray2[_index].quantity = _temparray2[_index].quantity + 1;
     localStorage.setItem("cartdata", JSON.stringify(_temparray2));
+    localStorage.setItem("totalofall", calPriceSummary(_temparray2));
     return {
       value: state.value,
       allproductdata: state.allproductdata,
@@ -148,6 +151,7 @@ var updateCartProduct = function updateCartProduct() {
     if (_temparray3[_index2].quantity > 1) {
       _temparray3[_index2].quantity = _temparray3[_index2].quantity - 1;
       localStorage.setItem("cartdata", JSON.stringify(_temparray3));
+      localStorage.setItem("totalofall", calPriceSummary(_temparray3));
       return {
         value: state.value,
         allproductdata: state.allproductdata,

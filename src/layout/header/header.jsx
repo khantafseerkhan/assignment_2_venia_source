@@ -62,12 +62,12 @@ import { useEffect } from "react";
                     <div className="aem-GridColumn aem-GridColumn--default--7 aem-GridColumn aem-GridColumn--tablet--7 phone-hide">
                         <nav className="navigation "  role='navigation' aria-label='Menu'>
                             <ul className="flex">
-                                <li><a href="javascript:void(0)" onClick={()=>navigate("/assignment_2_venia")}>Women</a></li>
-                                <li><a  href="javascript:void(0)" onClick={()=>navigate("/assignment_2_venia")}>Men</a></li>
+                                <li><a href="javascript:void(0)" onClick={()=>navigate("/assignment_2_venia")}  role='button' aria-label='Women'>Women</a></li>
+                                <li><a  href="javascript:void(0)" onClick={()=>navigate("/assignment_2_venia")} role='button' aria-label='Men'>Men</a></li>
 
-                                <li><a  href="javascript:void(0)" onClick={()=>navigate("/assignment_2_venia")}>Smart Gear</a></li>
+                                <li><a  href="javascript:void(0)" onClick={()=>navigate("/assignment_2_venia")} role='button' aria-label='Smart Gear'>Smart Gear</a></li>
 
-                                <li><a  href="javascript:void(0)" onClick={()=>navigate("/assignment_2_venia")}>Accessories</a></li>
+                                <li><a  href="javascript:void(0)" onClick={()=>navigate("/assignment_2_venia")}  role='button' aria-label='Accessories'>Accessories</a></li>
 
                             </ul>
                         </nav>
@@ -110,11 +110,11 @@ import { useEffect } from "react";
                         </div>
                         <nav  role='navigation' aria-label='Mobile Menu'>
                             <ul>
-                                <li><a  href="javascript:void(0)" onClick={()=>{navigate("/assignment_2_venia"); closeNav()}}>Women</a></li>
-                                <li ><a  href="javascript:void(0)" onClick={()=>navigate("/assignment_2_venia")}>Men</a></li>
-                                <li><a  href="javascript:void(0)" onClick={()=>navigate("/assignment_2_venia")}>Smart Gear</a></li>
+                                <li><a  href="javascript:void(0)" onClick={()=>{navigate("/assignment_2_venia"); closeNav()}}  role='button' aria-label='Women'>Women</a></li>
+                                <li ><a  href="javascript:void(0)" onClick={()=>{navigate("/assignment_2_venia"); closeNav()}} role='button' aria-label='Men'>Men</a></li>
+                                <li><a  href="javascript:void(0)"  onClick={()=>{navigate("/assignment_2_venia"); closeNav()}}   role='button' aria-label='Smart Gear'>Smart Gear</a></li>
 
-                                <li><a href="javascript:void(0)" onClick={()=>navigate("/assignment_2_venia")}>Accessories</a></li>
+                                <li><a href="javascript:void(0)"  onClick={()=>{navigate("/assignment_2_venia"); closeNav()}}  role='button' aria-label='Accessories'>Accessories</a></li>
 
                             </ul>
                         </nav>
@@ -123,11 +123,11 @@ import { useEffect } from "react";
                             <div className="bottom-footer">
                                 <div>
                                     <img alt="Account" src={require("../../assets/img/user.png")} style={{ paddingRight: "10px" }} />
-                                    <a  href="javascript:void(0)">Account</a>
+                                    <a  href="javascript:void(0)" role='button' aria-label='Account'>Account</a>
                                 </div>
 
                                 <div>
-                                    <a  href="javascript:void(0)">Sign in</a>
+                                    <a  href="javascript:void(0)" role='button' aria-label='Sign in'>Sign in</a>
                                 </div>
                             </div>
                         </div>

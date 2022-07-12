@@ -4,7 +4,7 @@ let initialstate = {
   value: 10,
   allproductdata: [],
   cartProduct: localStorage.getItem("cartdata")?JSON.parse(localStorage.getItem("cartdata")):[],
-  totalOfall: 0,
+  totalOfall: localStorage.getItem("totalofall")?localStorage.getItem("totalofall"):0,
   coupon: 20,
   giftCard: 10,
   etax: 50,
@@ -14,7 +14,6 @@ let initialstate = {
 }
 
 
-console.log("headf   "+localStorage.getItem("cartdata"))
 
 
 export const changeTheState = (state = initialstate, action) => {
@@ -53,6 +52,7 @@ export const updateCartProduct = (state = initialstate, action) => {
       temparray[index].quantity = temparray[index].quantity + action.data.quantity;
 
       localStorage.setItem("cartdata", JSON.stringify(temparray))
+      localStorage.setItem("totalofall",calPriceSummary(temparray))
 
       return {
         value: state.value,
@@ -73,7 +73,7 @@ export const updateCartProduct = (state = initialstate, action) => {
       temparray.push(action.data);
 
       localStorage.setItem("cartdata", JSON.stringify(temparray))
-
+      localStorage.setItem("totalofall",calPriceSummary(temparray))
       return {
         value: state.value,
         allproductdata: state.allproductdata,
@@ -100,6 +100,7 @@ export const updateCartProduct = (state = initialstate, action) => {
       temparray.splice(action.data, 1);
 
       localStorage.setItem("cartdata", JSON.stringify(temparray))
+      localStorage.setItem("totalofall",calPriceSummary(temparray))
 
       return {
         value: state.value,
@@ -123,6 +124,7 @@ export const updateCartProduct = (state = initialstate, action) => {
     temparray[index].quantity = temparray[index].quantity + 1;
 
     localStorage.setItem("cartdata", JSON.stringify(temparray))
+    localStorage.setItem("totalofall",calPriceSummary(temparray))
 
     return {
       value: state.value,
@@ -145,6 +147,7 @@ export const updateCartProduct = (state = initialstate, action) => {
       temparray[index].quantity = temparray[index].quantity - 1;
 
       localStorage.setItem("cartdata", JSON.stringify(temparray))
+      localStorage.setItem("totalofall",calPriceSummary(temparray))
 
       return {
         value: state.value,
