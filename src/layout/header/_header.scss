@@ -19,8 +19,8 @@
             a {
 
                 text-align: left;
-                font: normal normal 600 16px/24px Muli;
-                letter-spacing: 0px;
+                font: normal normal 600 16px/24px mul-regular;    
+                            letter-spacing: 0px;
                 color: #1B252C;
                 text-decoration: none;
             }
@@ -37,7 +37,7 @@
 
         li {
             text-align: right;
-            font: normal normal 600 16px/24px Muli;
+            font: normal normal 600 16px/24px mul-regular;    
             letter-spacing: 0px;
             color: #1B252C;
 
@@ -47,7 +47,7 @@
         }
 
         span {
-            vertical-align: super;
+            vertical-align: bottom;
         }
     }
 }
@@ -130,4 +130,20 @@
         }
 
     }
+}
+
+
+.badge {
+    position: absolute;
+    margin-left: -7px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    /* padding: 2px; */
+    margin-top: -9px;
+    min-width: 17px;
+    min-height: 3px;
+    text-align: center;
 }

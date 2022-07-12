@@ -25,14 +25,14 @@
 
 .shipping-section ul li .left-section .title {
   text-align: left;
-  font: normal normal normal 20px/25px Muli;
+  font: normal normal normal 20px/25px mul-regular;
   letter-spacing: 0px;
   color: #172026;
 }
 
 .shipping-section ul li .left-section .sub-title {
   text-align: right;
-  font: normal normal normal 14px/21px Muli;
+  font: normal normal normal 14px/21px mul-regular;
   letter-spacing: 0px;
   color: #172026;
 }
@@ -41,6 +41,38 @@
   width: 10%;
   align-self: center;
   text-align: -webkit-center;
+}
+
+@media screen and (max-width: 768px) {
+  .phone-flex {
+    display: initial !important;
+    justify-content: initial !important;
+  }
+  .phone-flex .sub-title {
+    text-align: left !important;
+  }
+  .right-section span {
+    width: 2px;
+    height: 2px;
+    /* UI Properties */
+    background: #1D1D1B 0% 0% no-repeat padding-box;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tablet-flex {
+    display: initial !important;
+    justify-content: initial !important;
+  }
+  .tablet-flex .sub-title {
+    text-align: left !important;
+  }
+  .right-section span {
+    width: 2px;
+    height: 2px;
+    /* UI Properties */
+    background: #1D1D1B 0% 0% no-repeat padding-box;
+  }
 }
 
 /*# sourceMappingURL=_shippingsection.css.map */

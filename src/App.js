@@ -4,16 +4,23 @@ import Layout from './layout/layout';
 import {useSelector , useDispatch} from "react-redux";
 import hasClass from "./assets/customjs/custom";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Routing from './layout/routes/routing';
 
 const App=() =>{
   const myState=useSelector((state) => state.changeTheState);
 
   return (
     <>
-<Layout />
+
+<div id="loadingsection" className='loadingsection' style={{display:"none"}}>
+    <img src={require("./assets/img/loadericon.gif")} />
+
+</div>
+{/* <Routing /> */}
       {/* <Route path="singleproduct" element={<Singleproduct />} /> */}
-      {/* <Layout /> */}
-    
+      <Layout />
+     
+
 
       
 

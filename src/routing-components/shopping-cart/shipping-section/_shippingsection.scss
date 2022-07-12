@@ -1,37 +1,40 @@
-.shipping-section{
+.shipping-section {
     background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 1px solid #D1D3D6;
-border-radius: 2px;
+    border: 1px solid #D1D3D6;
+    border-radius: 2px;
 
-    ul{
+    ul {
         list-style: none;
         margin: 0;
         margin-left: -36px;
-        li{
+
+        li {
             height: 49px;
             display: flex;
             justify-content: space-between;
-            .left-section{
+
+            .left-section {
                 display: flex;
                 justify-content: space-between;
                 width: 90%;
                 align-self: center;
 
-                .title{
+                .title {
                     text-align: left;
-                    font: normal normal normal 20px/25px Muli;
+                    font: normal normal normal 20px/25px mul-regular;
                     letter-spacing: 0px;
                     color: #172026;
                 }
-                .sub-title{
+
+                .sub-title {
                     text-align: right;
-                    font: normal normal normal 14px/21px Muli;
+                    font: normal normal normal 14px/21px mul-regular;
                     letter-spacing: 0px;
                     color: #172026;
                 }
             }
 
-            .right-section{
+            .right-section {
                 width: 10%;
                 align-self: center;
                 text-align: -webkit-center;
@@ -39,4 +42,55 @@ border-radius: 2px;
             }
         }
     }
+}
+
+@media screen and (max-width: 768px) {
+    .phone-flex {
+        display: initial !important;
+        justify-content: initial !important;
+
+        .sub-title {
+            text-align: left !important;
+        }
+
+     
+    }
+
+    .right-section {
+        span {
+
+            width: 2px;
+            height: 2px;
+            /* UI Properties */
+            background: #1D1D1B 0% 0% no-repeat padding-box;
+
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .tablet-flex {
+        display: initial !important;
+        justify-content: initial !important;
+
+        .sub-title {
+            text-align: left !important;
+        }
+
+     
+    }
+
+    .right-section {
+        span {
+
+            width: 2px;
+            height: 2px;
+            /* UI Properties */
+            background: #1D1D1B 0% 0% no-repeat padding-box;
+
+        }
+    }
+
+
+
 }

@@ -14,13 +14,13 @@ export default class Footer extends React.Component {
                 <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--3 aem-GridColumn--phone--12  footermenu">
                     <div className="header">Account</div>
                     <ul>
-                        <li><a href="">Sign in</a></li>
-                        <li><a href="">Register</a></li>
-                        <li><a href="">Order Status</a></li>
+                        <li><a href="javascript:void(0)">Sign in</a></li>
+                        <li><a href="javascript:void(0)">Register</a></li>
+                        <li><a href="javascript:void(0)">Order Status</a></li>
 
-                        <li><a href="">Returns</a></li>
+                        <li><a href="javascript:void(0)">Returns</a></li>
 
-                        <li><a href="">Register</a></li>
+                        <li><a href="javascript:void(0)">Register</a></li>
 
 
                     </ul>
@@ -29,8 +29,8 @@ export default class Footer extends React.Component {
                 <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--3 aem-GridColumn--phone--12  footermenu">
                     <div className="header">About Us</div>
                     <ul>
-                        <li><a href="">Our Story </a></li>
-                        <li><a href="">Careers</a></li>
+                        <li><a href="javascript:void(0)">Our Story </a></li>
+                        <li><a href="javascript:void(0)">Careers</a></li>
 
 
                     </ul>
@@ -38,9 +38,9 @@ export default class Footer extends React.Component {
                 <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--tablet--3 aem-GridColumn--phone--12  footermenu">
                     <div className="header">Help</div>
                     <ul>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="">Order Status</a></li>
-                        <li><a href="">Returns</a></li>
+                        <li><a  href="javascript:void(0)">Contact Us</a></li>
+                        <li><a href="javascript:void(0)">Order Status</a></li>
+                        <li><a href="javascript:void(0)">Returns</a></li>
 
 
 
@@ -56,14 +56,14 @@ export default class Footer extends React.Component {
                         </li>
                         <li>
 
-                            <a href="">
-                                <img src={require("../../assets/img/instagram.png")} />
+                            <a href="javascript:void(0)">
+                                <img alt="Instagram Icon" src={require("../../assets/img/instagram.png")} />
                             </a>
-                            <a href="">
-                                <img src={require("../../assets/img/facebook.png")} />
+                            <a href="javascript:void(0)">
+                                <img alt="Facebook Icon" src={require("../../assets/img/facebook.png")} />
                             </a>
-                            <a href="">
-                                <img src={require("../../assets/img/twitter.png")} />
+                            <a href="javascript:void(0)">
+                                <img alt="Twitter Icon" src={require("../../assets/img/twitter.png")} />
                             </a>
 
                         </li>

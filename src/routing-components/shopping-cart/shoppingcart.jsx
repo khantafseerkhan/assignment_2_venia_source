@@ -8,43 +8,50 @@ import Shippingsection from "./shipping-section/shippingsection";
 
 const Shoppingcart = () => {
 
-    const [selectedProducts, setSelectedProducts] = useState([]);
-    const productData = useSelector(state => state.updateCartProduct.cartProduct);
+    const selectedProducts = useSelector(state => state.updateCartProduct.cartProduct);
 
-    useEffect(() => {
-        setSelectedProducts(productData)
-    }, [])
+
     return (
         <>
-{selectedProducts.length==0?
-(
 
-    <div className="aem-Grid aem-Grid--12">
-    <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn aem-GridColumn--phone--12">
-    <div className="msg">Nothing to show into cart.......</div>
-    </div>
-    
+<div className="aem-Grid aem-Grid--12">
+                        <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn aem-GridColumn--phone--12">
+                            <div className="top-heading">
+                                <span>
+                                Your Shopping Cart
+                                </span>
+                                <br />
+                               <hr />
+                            </div>
+                        </div>
 
+                        </div>
+            {selectedProducts.length == 0 ?
+                (
 
-</div>
-
-    
-):(
-    <div className="aem-Grid aem-Grid--12">
-                <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn aem-GridColumn--phone--12">
-                    <Addedproduct/>
-                </div>
-                <div className="aem-GridColumn aem-GridColumn--default--4  aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn aem-GridColumn--phone--12">
-                    <Pricesummary />
-                </div>
-                {/* <div className="aem-GridColumn aem-GridColumn--default--4"></div> */}
+                    <div className="aem-Grid aem-Grid--12">
+                        <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn aem-GridColumn--phone--12">
+                            <div className="msg">Nothing to show into cart.......</div>
+                        </div>
 
 
-            </div>
 
-)
-}
-        
+                    </div>
+
+
+                ) : (
+                    <div className="aem-Grid aem-Grid--12">
+                        <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn aem-GridColumn--phone--12">
+                            <Addedproduct />
+                        </div>
+                        <div className="aem-GridColumn aem-GridColumn--default--4  aem-GridColumn aem-GridColumn--tablet--12 aem-GridColumn aem-GridColumn--phone--12">
+                            <Pricesummary />
+                        </div>
+                    </div>
+
+                )
+            }
+
 
             {/* shipping secton    */}
 

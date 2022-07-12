@@ -1,9 +1,10 @@
 import React from "react";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import ProductCategory from "../../routing-components/products-category/productcategory";
 import Shoppingcart from "../../routing-components/shopping-cart/shoppingcart";
 import Singleproduct from "../../routing-components/single-product/singleproduct";
+import Layout from "../layout";
 
 export default class Routing extends React.Component{
     constructor(props){
@@ -15,7 +16,6 @@ export default class Routing extends React.Component{
            <>
 
 
-    <BrowserRouter>
       <Routes>
       <Route path="assignment_2_venia" element={<ProductCategory />} />
       {/* <Route path="singleproduct" element={<Singleproduct />} /> */}
@@ -27,7 +27,6 @@ export default class Routing extends React.Component{
 
     
       </Routes>
-    </BrowserRouter>
     
 
 

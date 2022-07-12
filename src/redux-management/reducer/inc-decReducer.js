@@ -8,7 +8,8 @@ let initialstate = {
   coupon: 20,
   giftCard: 10,
   etax: 50,
-  shippingCharge: 0
+  shippingCharge: 0,
+  cartCount:0
 
 }
 
@@ -56,7 +57,8 @@ export const updateCartProduct = (state = initialstate, action) => {
         coupon: state.coupon,
         giftCard: state.giftCard,
         etax: state.etax,
-        shippingCharge: state.shippingCharge
+        shippingCharge: state.shippingCharge,
+        cartCount:temparray.length
 
       }
 
@@ -70,7 +72,9 @@ export const updateCartProduct = (state = initialstate, action) => {
         coupon: state.coupon,
         giftCard: state.giftCard,
         etax: state.etax,
-        shippingCharge: state.shippingCharge
+        shippingCharge: state.shippingCharge,
+        cartCount:temparray.length
+
 
 
       }
@@ -92,7 +96,9 @@ export const updateCartProduct = (state = initialstate, action) => {
         coupon: state.coupon,
         giftCard: state.giftCard,
         etax: state.etax,
-        shippingCharge: state.shippingCharge
+        shippingCharge: state.shippingCharge,
+        cartCount:temparray.length
+
 
       }
     } else {
@@ -110,7 +116,9 @@ export const updateCartProduct = (state = initialstate, action) => {
       coupon: state.coupon,
       giftCard: state.giftCard,
       etax: state.etax,
-      shippingCharge: state.shippingCharge
+      shippingCharge: state.shippingCharge,
+      cartCount:temparray.length
+
 
 
     }
@@ -127,7 +135,9 @@ export const updateCartProduct = (state = initialstate, action) => {
         coupon: state.coupon,
         giftCard: state.giftCard,
         etax: state.etax,
-        shippingCharge: state.shippingCharge
+        shippingCharge: state.shippingCharge,
+        cartCount:temparray.length
+
 
       }
     }

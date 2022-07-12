@@ -2,6 +2,8 @@
 
 @import "../../layout/footer/_footer.scss";
 
+@import "../../components/paginations/_pagination.scss";
+
 @import "../../routing-components/products-category/hero-banner/_herobanner.scss";
 
 @import "../../routing-components/products-category/_productcategory.scss";
@@ -21,6 +23,13 @@
 @import "../../routing-components/shopping-cart/price-summary/_pricesummary.scss";
 
 @import "../../routing-components/shopping-cart/shipping-section/_shippingsection.scss";
+
+
+@import "../../routing-components/products-category/_productcategory.scss";
+
+@import "../../routing-components/shopping-cart/_shoppingcart.scss";
+
+
 .logo {
     text-align-last: center;
 
@@ -94,6 +103,10 @@
         display: none !important;
 
     }
+    .phone-center{
+        text-align: center !important;
+    
+    }
 
 
 }
@@ -107,6 +120,11 @@
 
     .tab-show {
         display: initial !important;
+    }
+
+    .tab-center{
+        text-align: center !important;
+    
     }
 }
 
@@ -128,7 +146,69 @@
     border-bottom: 1px inset;
 }
 .msg{
-    font: normal normal 600 20px/25px Muli;
+    font: normal normal 600 20px/25px mul-regular;
     text-align: center;
 
 }
+
+.right{
+text-align: right;
+
+text-align: -webkit-right;
+
+}
+
+.left{
+    text-align: left;
+    
+    text-align: -webkit-left;
+    
+    }
+
+
+    .select-form{
+        border: 2px solid var(--gray-l2);
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 2px solid #B5B7BC;
+border-radius: 8px;
+width: 254px;
+height: 44px;
+    }
+
+
+    .loadingsection{
+        position: fixed;
+                z-index: 1000;
+        background-color: white;
+        opacity: 0.6;
+        height: -webkit-fill-available;
+        width: 100%;
+        text-align: -webkit-center;
+        img{
+        }
+    }
+
+
+   
+
+    
+@font-face {
+    font-family: mul-regular;
+    src: url("../fonts/muli/muli/Muli-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family:mul-semibold;
+    src: url("../fonts/muli/muli/Muli-SemiBold.ttf");
+  }
+  @font-face {
+    font-family: mul-bold;
+    src: url("../fonts/muli/muli/Muli-Bold.ttf");
+  }
+  
+  
+  @font-face {
+    font-family: SourceSeri-bold;
+    src: url("../fonts/source-serif-pro/SourceSerifPro-Semibold.otf");
+  }
+ 

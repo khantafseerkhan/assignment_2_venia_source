@@ -4,7 +4,7 @@
 
 .footermenu .header {
   text-align: left;
-  font: normal normal 600 16px/24px Muli;
+  font: normal normal 600 16px/24px mul-regular;
   letter-spacing: 0px;
   color: #172026;
 }
@@ -16,7 +16,7 @@
 
 .footermenu ul li a {
   text-align: left;
-  font: normal normal normal 16px/24px Muli;
+  font: normal normal 600 16px/24px mul-regular;
   letter-spacing: 0px;
   color: #545D63;
   text-decoration: none;
@@ -24,7 +24,7 @@
 
 .footermenu ul li p {
   text-align: left;
-  font: normal normal normal 16px/24px Muli;
+  font: normal normal normal 16px/24px mul-regular;
   letter-spacing: 0px;
   color: #545D63;
 }
@@ -57,7 +57,7 @@
 
 .footer-bottom-container .footer-bottom .desc-section {
   text-align: center;
-  font: normal normal normal 14px/18px Muli;
+  font: normal normal normal 14px/18px mul-regular;
   letter-spacing: 0px;
   color: #545D63;
   padding: 8px;

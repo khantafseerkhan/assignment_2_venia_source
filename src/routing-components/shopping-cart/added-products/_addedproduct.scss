@@ -14,16 +14,21 @@
     .details {
         .title-section {
             text-align: left;
-            font: normal normal 600 20px/25px Muli;
+            font: normal normal 600 20px/25px mul-regular;
             letter-spacing: 0px;
             color: #172026;
         }
 
         .sub-section {
             text-align: left;
-            font: normal normal normal 16px/24px Muli;
+            font: normal normal normal 16px/24px mul-regular;
             letter-spacing: 0px;
             color: #172026;
+
+            span{
+                padding-right: 6px;
+                font: normal normal normal 16px/24px mul-regular;
+            }
         }
     }
 
@@ -35,7 +40,7 @@
 
             .title-section {
                 text-align: left;
-                font: normal normal 600 20px/30px Muli;
+                font: normal normal 600 20px/30px mul-regular;
                 letter-spacing: 0px;
                 color: #172026;
             }
@@ -59,7 +64,7 @@
                 border: 2px solid #B5B8BA;
 
                 text-align: center;
-                font: normal normal 600 16px/20px Muli;
+                font: normal normal 600 16px/20px mul-regular;
                 letter-spacing: 0.32px;
                 color: #545D63;
 
@@ -92,7 +97,7 @@
                 span{
                     vertical-align: super;
                     text-align: left;
-                    font: normal normal 600 12px/14px Muli;
+                    font: normal normal 600 12px/14px mul-regular;
                     letter-spacing: 0px;
                     color: #172026;
                 }

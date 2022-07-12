@@ -5,6 +5,7 @@ import { getservice } from "../../apiservice/customservice";
 import Productdescription from "./description-container/productdescription";
 import Productimages from "./images-container/productimages";
 import Productsummary from "./summary-container/productsummary";
+import { removeloader, activeloader } from "../../assets/customjs/custom";
 
 const Singleproduct = () => {
     const id = useParams().id;
@@ -24,10 +25,13 @@ const Singleproduct = () => {
     useEffect(() => {
 
         // this.props.updateproductslist(['1']);
-
+        try { activeloader() } catch (e) { }
 
         const apires = getservice('https://fakestoreapi.com/products/' + id);
         apires.then(json => {
+
+            try { removeloader() } catch (e) { }
+
             // this.props.updateproductslist(json);
             // setSingleProductdata(json)
             let temp = []
@@ -49,7 +53,16 @@ const Singleproduct = () => {
     return (
         <>
 
-            <div><button type="button" onClick={() => tocart()}>cart</button></div>
+
+            <div className="aem-Grid aem-Grid--12 phone-show">
+                <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn aem-GridColumn--phone--12">
+                    <div className="product-top"> Clothing / Women’s / Outerwear</div>
+
+                </div>
+
+            </div>
+
+
             <div className="aem-Grid aem-Grid--12">
                 <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn aem-GridColumn--tablet--6 aem-GridColumn aem-GridColumn--phone--12">
                     <Productimages propductimg={singleProductdata.image} />
@@ -57,6 +70,9 @@ const Singleproduct = () => {
 
 
                 <div className="aem-GridColumn aem-GridColumn--default--6 aemGridColumn aem-GridColumn--tablet--6 aem-GridColumn aem-GridColumn--phone--12">
+                <div className="product-top  phone-hide"> Clothing / Women’s / Outerwear</div>
+
+                   
                     <Productsummary productdata={singleProductdata} />
                 </div>
                 {/* <div className="aem-GridColumn aem-GridColumn--default--4"></div> */}

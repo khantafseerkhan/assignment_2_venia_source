@@ -5,7 +5,8 @@
     padding: 116px;
     .label{
         text-align: center;
-        font: normal normal 600 48px/60px Source Serif Pro;
+
+        font: normal normal 600 48px/60px SourceSeri-bold;
         letter-spacing: 0px;
         color: #FFFFFF;
     }
@@ -26,4 +27,17 @@
     }
 
 
+}
+
+
+.heroimg{
+    padding: 13px 0px 0px 0px;
+
+    img{
+        width: -webkit-fill-available;
+        height: 321px;
+    }
+    
+    .center-text-section{
+    }
 }

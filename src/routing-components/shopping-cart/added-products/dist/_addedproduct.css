@@ -9,21 +9,26 @@
 
 .productcontainer .details .title-section {
   text-align: left;
-  font: normal normal 600 20px/25px Muli;
+  font: normal normal 600 20px/25px mul-regular;
   letter-spacing: 0px;
   color: #172026;
 }
 
 .productcontainer .details .sub-section {
   text-align: left;
-  font: normal normal normal 16px/24px Muli;
+  font: normal normal normal 16px/24px mul-regular;
   letter-spacing: 0px;
   color: #172026;
 }
 
+.productcontainer .details .sub-section span {
+  padding-right: 6px;
+  font: normal normal normal 16px/24px mul-regular;
+}
+
 .productcontainer .quantitycontainer .quntity-section .title-section {
   text-align: left;
-  font: normal normal 600 20px/30px Muli;
+  font: normal normal 600 20px/30px mul-regular;
   letter-spacing: 0px;
   color: #172026;
 }
@@ -46,7 +51,7 @@
   background: #EAEBEB 0% 0% no-repeat padding-box;
   border: 2px solid #B5B8BA;
   text-align: center;
-  font: normal normal 600 16px/20px Muli;
+  font: normal normal 600 16px/20px mul-regular;
   letter-spacing: 0.32px;
   color: #545D63;
   width: 32px;
@@ -69,7 +74,7 @@
 .productcontainer .edit-section ul li span {
   vertical-align: super;
   text-align: left;
-  font: normal normal 600 12px/14px Muli;
+  font: normal normal 600 12px/14px mul-regular;
   letter-spacing: 0px;
   color: #172026;
 }

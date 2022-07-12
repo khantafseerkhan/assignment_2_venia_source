@@ -1,7 +1,8 @@
 .filter-container {
     .title {
         text-align: left;
-        font: normal normal normal 20px/14px Muli;
+
+        font: normal normal normal 20px/14px mul-regular;
         letter-spacing: 0px;
         color: #181C24;
         padding: 10px;
@@ -11,7 +12,8 @@
 
         .heading {
             text-align: left;
-            font: normal normal 600 16px/24px Muli;
+
+            font: normal normal normal 20px/14px mul-regular;
             letter-spacing: 0px;
             color: #181C24;
             padding: 10px;
@@ -19,14 +21,61 @@
 
         ul {
             list-style: none;
-            margin:0;
+            margin: 0;
             margin-left: -30px;
+
             li {
                 padding: 7px 0px;
 
                 span {}
             }
+
+            .showmore {
+                text-align: left;
+                text-decoration: underline;
+                font: normal normal 600 14px/24px mul-regular;
+                letter-spacing: 0px;
+                color: #181C24;
+            }
+
+
+
+        }
+
+        .color-section {
+
+            li {
+                display: inline-flex;
+                padding-left: 11px;
+
+                .colordiv {
+                    width: 64px;
+                    height: 40px;
+                    /* UI Properties */
+                    border: 2px solid #DFE1E2;
+                    border-radius: 6px;
+                }
+            }
         }
     }
 
+}
+
+.absolute-postion {
+    position: absolute;
+    z-index: 162;
+    background: white;
+    top: 45px;
+
+    .filter-container {
+        overflow-y: scroll;
+        height: 100%;
+
+        .color-section {
+
+            width: 100%;
+            white-space: pre-wrap;
+
+        }
+    }
 }

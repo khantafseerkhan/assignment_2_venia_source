@@ -59,10 +59,10 @@ const Productsummary = (props) => {
                                 <div className="color-section">
                                     <div className="title-section">Color</div>
                                     <ul>
-                                        <li><button>color</button></li>
-                                        <li><button>color</button></li>
-                                        <li><button>color</button></li>
-                                        <li><button>color</button></li>
+                                        <li><button type="button" role='button' aria-label='color'>color</button></li>
+                                        <li><button type="button" role='button' aria-label='color'>color</button></li>
+                                        <li><button type="button" role='button' aria-label='color'>color</button></li>
+                                        <li><button type="button" role='button' aria-label='color'>color</button></li>
 
                                     </ul>
                                 </div>
@@ -71,11 +71,11 @@ const Productsummary = (props) => {
                                     <div className="title-section">Size</div>
 
                                     <ul>
-                                        <li><button>XS</button></li>
-                                        <li><button>S</button></li>
-                                        <li><button>M</button></li>
-                                        <li><button>L</button></li>
-                                        <li><button>XL</button></li>
+                                        <li><button  type="button" role='button' aria-label='XS Size'>XS</button></li>
+                                        <li><button   type="button" role='button' aria-label='S Size'>S</button></li>
+                                        <li><button  type="button" role='button' aria-label='M Size'>M</button></li>
+                                        <li><button  type="button" role='button' aria-label='L Size'>L</button></li>
+                                        <li><button   type="button" role='button' aria-label='XL Size'>XL</button></li>
 
 
                                     </ul>
@@ -84,9 +84,9 @@ const Productsummary = (props) => {
                                 <div className="quntity-section">
                                     <div className="title-section">Quantity</div>
 
-                                    <button onClick={() => decQuantity()}>-</button>
+                                    <button   type="button" role='button' aria-label='Quantity Decreament' onClick={() => decQuantity()}>-</button>
                                     <input type="text" value={quantity} />
-                                    <button onClick={() => incQuantity()}>+</button>
+                                    <button onClick={() => incQuantity()}   type="button" role='button' aria-label='Quantity Increament'>+</button>
 
 
                                 </div>
@@ -94,11 +94,11 @@ const Productsummary = (props) => {
 
                                 <div className="add-section">
 
-                                    <button type="button" onClick={() => AddProduct(props.productdata)}>Add To Cart</button>
+                                    <button type="button" onClick={() => AddProduct(props.productdata)}  role='button' aria-label='Add To Cart'>Add To Cart</button>
 
                                     <div>
-                                        <a href=""><img src={require("../../../assets/img/heart.png")} /><span>Save</span></a>
-                                        <a href=""><img src={require("../../../assets/img/share-2.png")} /><span>Share</span></a>
+                                        <a href="javascript:void(0)" role='button' aria-label='Save for Later'><img alt="save for later" src={require("../../../assets/img/heart.png")}   /><span>Save</span></a>
+                                        <a href="javascript:void(0)" role='button' aria-label='Share'><img alt="Share" src={require("../../../assets/img/share-2.png")} /><span>Share</span></a>
                                     </div>
 
                                 </div>
