@@ -3,17 +3,18 @@ let initialstate = {
 
   value: 10,
   allproductdata: [],
-  cartProduct: [],
+  cartProduct: localStorage.getItem("cartdata")?JSON.parse(localStorage.getItem("cartdata")):[],
   totalOfall: 0,
   coupon: 20,
   giftCard: 10,
   etax: 50,
   shippingCharge: 0,
-  cartCount:0
+  cartCount: 0
 
 }
 
 
+console.log("headf   "+localStorage.getItem("cartdata"))
 
 
 export const changeTheState = (state = initialstate, action) => {
@@ -42,6 +43,7 @@ export const updateproductslist = (state = initialstate, action) => {
 }
 export const updateCartProduct = (state = initialstate, action) => {
 
+
   if (action.type == "add") {
     let temparray = state.cartProduct;
 
@@ -49,6 +51,9 @@ export const updateCartProduct = (state = initialstate, action) => {
     if (index != -1) {
 
       temparray[index].quantity = temparray[index].quantity + action.data.quantity;
+
+      localStorage.setItem("cartdata", JSON.stringify(temparray))
+
       return {
         value: state.value,
         allproductdata: state.allproductdata,
@@ -58,12 +63,17 @@ export const updateCartProduct = (state = initialstate, action) => {
         giftCard: state.giftCard,
         etax: state.etax,
         shippingCharge: state.shippingCharge,
-        cartCount:temparray.length
+        cartCount: temparray.length
 
       }
 
+
+
     } else {
       temparray.push(action.data);
+
+      localStorage.setItem("cartdata", JSON.stringify(temparray))
+
       return {
         value: state.value,
         allproductdata: state.allproductdata,
@@ -73,7 +83,7 @@ export const updateCartProduct = (state = initialstate, action) => {
         giftCard: state.giftCard,
         etax: state.etax,
         shippingCharge: state.shippingCharge,
-        cartCount:temparray.length
+        cartCount: temparray.length
 
 
 
@@ -88,6 +98,9 @@ export const updateCartProduct = (state = initialstate, action) => {
     if (action.data != -1) {
 
       temparray.splice(action.data, 1);
+
+      localStorage.setItem("cartdata", JSON.stringify(temparray))
+
       return {
         value: state.value,
         allproductdata: state.allproductdata,
@@ -97,7 +110,7 @@ export const updateCartProduct = (state = initialstate, action) => {
         giftCard: state.giftCard,
         etax: state.etax,
         shippingCharge: state.shippingCharge,
-        cartCount:temparray.length
+        cartCount: temparray.length
 
 
       }
@@ -108,6 +121,9 @@ export const updateCartProduct = (state = initialstate, action) => {
     let temparray = state.cartProduct;
     let index = temparray.findIndex(x => x.id == action.data);
     temparray[index].quantity = temparray[index].quantity + 1;
+
+    localStorage.setItem("cartdata", JSON.stringify(temparray))
+
     return {
       value: state.value,
       allproductdata: state.allproductdata,
@@ -117,7 +133,7 @@ export const updateCartProduct = (state = initialstate, action) => {
       giftCard: state.giftCard,
       etax: state.etax,
       shippingCharge: state.shippingCharge,
-      cartCount:temparray.length
+      cartCount: temparray.length
 
 
 
@@ -127,6 +143,9 @@ export const updateCartProduct = (state = initialstate, action) => {
     let index = temparray.findIndex(x => x.id == action.data);
     if (temparray[index].quantity > 1) {
       temparray[index].quantity = temparray[index].quantity - 1;
+
+      localStorage.setItem("cartdata", JSON.stringify(temparray))
+
       return {
         value: state.value,
         allproductdata: state.allproductdata,
@@ -136,7 +155,7 @@ export const updateCartProduct = (state = initialstate, action) => {
         giftCard: state.giftCard,
         etax: state.etax,
         shippingCharge: state.shippingCharge,
-        cartCount:temparray.length
+        cartCount: temparray.length
 
 
       }
