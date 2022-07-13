@@ -71,21 +71,21 @@ const Productimages = (props) => {
 
                         <div className="mySlides fade">
                             <div className="numbertext">1 / 3</div>
-                            <img src={props.propductimg} style={{width:"100%"}} />
+                            <img src={props.propductimg} style={{width:"100%"}} alt="item"/>
                         </div>
 
                         <div className="mySlides fade">
                             <div className="numbertext">2 / 3</div>
-                            <img src={props.propductimg} style={{width:"100%"}} />
+                            <img src={props.propductimg} style={{width:"100%"}} alt="item"/>
                         </div>
 
                         <div className="mySlides fade">
                             <div className="numbertext">3 / 3</div>
-                            <img src={props.propductimg} style={{width:"100%"}} />
+                            <img src={props.propductimg} style={{width:"100%"}} alt="item"/>
                         </div>
 
-                        <a className="prev" onclick={()=>plusSlides(-1)} >❮</a>
-                        <a className="next" onclick={()=>plusSlides(1)}>❯</a>
+                        <a role='button' aria-label='Left' href="javascript:void(0)" className="prev" onclick={()=>plusSlides(-1)} >❮</a>
+                        <a role='button' aria-label='Right' href="javascript:void(0)" className="next" onclick={()=>plusSlides(1)}>❯</a>
 
                     </div>
                     <br />

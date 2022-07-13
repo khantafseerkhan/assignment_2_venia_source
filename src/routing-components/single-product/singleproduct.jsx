@@ -70,7 +70,7 @@ const Singleproduct = () => {
 
 
                 <div className="aem-GridColumn aem-GridColumn--default--6 aemGridColumn aem-GridColumn--tablet--6 aem-GridColumn aem-GridColumn--phone--12">
-                <div className="product-top  phone-hide"> Clothing / Women’s / Outerwear</div>
+                <div className="product-top  phone-hide" style={{paddingLeft:"30px"}}> Clothing / Women’s / Outerwear</div>
 
                    
                     <Productsummary productdata={singleProductdata} />

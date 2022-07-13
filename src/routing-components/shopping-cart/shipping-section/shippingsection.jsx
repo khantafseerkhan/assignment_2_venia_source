@@ -9,7 +9,7 @@ const Shippingsection = (props) => {
                     </div>
 
                     <div className="right-section">
-                        <img src={require("../../../assets/img/chevron-down.png")} />
+                        <img src={require("../../../assets/img/chevron-down.png")} alt="collapse button"/>
 
                     </div>
 
@@ -21,7 +21,7 @@ const Shippingsection = (props) => {
                     </div>
 
                     <div className="right-section">
-                        <img src={require("../../../assets/img/chevron-down.png")} />
+                        <img src={require("../../../assets/img/chevron-down.png")} alt="collapse button"/>
 
                     </div>
 
@@ -31,7 +31,7 @@ const Shippingsection = (props) => {
                         <div className="sub-title">Shipping to 91001</div>
                     </div>
                     <div className="right-section">
-                        <img src={require("../../../assets/img/chevron-down.png")} />
+                        <img src={require("../../../assets/img/chevron-down.png")} alt="collapse button"/>
                     </div>
 
                 </li>

@@ -7,84 +7,7 @@ const Filter = (props) => {
     const [colors, setColors] = useState([]);
     const [optionsArray, setOptionsArray] = useState([])
 
-    const color = [{
-        colorname: "Black",
-        colorcode: "#172026 0% 0% no-repeat padding-box",
 
-    },
-    {
-        colorname: "White",
-        colorcode: "#FFFFFF 0% 0% no-repeat padding-box",
-
-    },
-    {
-        colorname: "Green",
-        colorcode: "#2D9D78 0% 0% no-repeat padding-box",
-
-    },
-    {
-        colorname: "Yellow",
-        colorcode: "#FDBA5E 0% 0% no-repeat padding-box",
-
-    },
-    {
-        colorname: "Blue",
-        colorcode: "blue 0% 0% no-repeat padding-box",
-
-    },
-    {
-        colorname: "Marrown",
-        colorcode: "#E34850 0% 0% no-repeat padding-box",
-
-    }
-        ,
-    {
-        colorname: "Purple",
-        colorcode: "#6408D3 0% 0% no-repeat padding-box",
-
-    },
-    {
-        colorname: "Rose",
-        colorcode: "#F9009A 0% 0% no-repeat padding-box",
-
-    },
-    {
-        colorname: "Orange",
-        colorcode: "#EB7327 0% 0% no-repeat padding-box",
-
-    },
-    {
-        colorname: "Gradient",
-        colorcode: "transparent linear-gradient(180deg, #AF52FF 0%, #7950E8 16%, #4F5ADA 29%, #57CB76 43%, #EBC250 56%, #FF8810 69%, #E32F0F 83%, #BF1919 100%) 0% 0% no-repeat padding-box",
-
-    }
-
-
-
-    ]
-
-
-    const options = [
-        {
-            label: "Option1"
-        }, {
-            label: "Option2"
-        }, {
-            label: "Option3"
-        }, {
-            label: "Option4"
-        }, {
-            label: "Option5"
-        }, {
-            label: "Option6"
-        }, {
-            label: "Option7"
-        }, {
-            label: "Option8"
-        }, {
-            label: "Option9"
-        },
-    ]
 
 
 
@@ -102,6 +25,87 @@ const Filter = (props) => {
     }
 
     useEffect(() => {
+
+        const color = [{
+            colorname: "Black",
+            colorcode: "#172026 0% 0% no-repeat padding-box",
+
+        },
+        {
+            colorname: "White",
+            colorcode: "#FFFFFF 0% 0% no-repeat padding-box",
+
+        },
+        {
+            colorname: "Green",
+            colorcode: "#2D9D78 0% 0% no-repeat padding-box",
+
+        },
+        {
+            colorname: "Yellow",
+            colorcode: "#FDBA5E 0% 0% no-repeat padding-box",
+
+        },
+        {
+            colorname: "Blue",
+            colorcode: "blue 0% 0% no-repeat padding-box",
+
+        },
+        {
+            colorname: "Marrown",
+            colorcode: "#E34850 0% 0% no-repeat padding-box",
+
+        }
+            ,
+        {
+            colorname: "Purple",
+            colorcode: "#6408D3 0% 0% no-repeat padding-box",
+
+        },
+        {
+            colorname: "Rose",
+            colorcode: "#F9009A 0% 0% no-repeat padding-box",
+
+        },
+        {
+            colorname: "Orange",
+            colorcode: "#EB7327 0% 0% no-repeat padding-box",
+
+        },
+        {
+            colorname: "Gradient",
+            colorcode: "transparent linear-gradient(180deg, #AF52FF 0%, #7950E8 16%, #4F5ADA 29%, #57CB76 43%, #EBC250 56%, #FF8810 69%, #E32F0F 83%, #BF1919 100%) 0% 0% no-repeat padding-box",
+
+        }
+
+
+
+        ]
+
+        
+    
+
+        const options= [
+            {
+                label: "Option1"
+            }, {
+                label: "Option2"
+            }, {
+                label: "Option3"
+            }, {
+                label: "Option4"
+            }, {
+                label: "Option5"
+            }, {
+                label: "Option6"
+            }, {
+                label: "Option7"
+            }, {
+                label: "Option8"
+            }, {
+                label: "Option9"
+            },
+        ]
         setColors(color);
         setOptionsArray(options)
 
@@ -120,7 +124,13 @@ const Filter = (props) => {
                                 optionsArray.length > 0 &&
                                 (optionsArray.slice(0, 4).map((element) =>
 
-                                    <li><input type="checkbox" /> <span>{element.label}</span></li>
+                                    <li>
+
+
+                                        <input type="checkbox" id={element.label+"att1"} value={element.label+"att1"} name={element.label+"att1"} />
+                                        <label for={element.label+"att1"}>{element.label}</label>
+
+                                    </li>
                                 )
                                 )
                             }
@@ -141,7 +151,10 @@ const Filter = (props) => {
                                 optionsArray.length > 0 &&
                                 (optionsArray.slice(0, 6).map((element) =>
 
-                                    <li><input type="checkbox" /> <span>{element.label}</span></li>
+                                    <li>
+                                          <input type="checkbox" id={element.label+"att2"} value={element.label+"att2"} name={element.label+"att2"} />
+                                        <label for={element.label+"att2"}>{element.label}</label>
+                                    </li>
                                 )
 
                                 )
@@ -180,7 +193,10 @@ const Filter = (props) => {
 
                                 (optionsArray.slice(0, 8).map((element) =>
 
-                                    <li><input type="checkbox" /> <span>{element.label}</span></li>
+                                    <li>
+                                         <input type="checkbox" id={element.label+"att3"} value={element.label+"att3"} name={element.label+"att3"} />
+                                        <label for={element.label+"att3"}>{element.label}</label>
+                                    </li>
                                 ))
                             }
 
@@ -193,7 +209,7 @@ const Filter = (props) => {
             <div className="aem-Grid aemGrid--12 phone-show shadow phone-show absolute-postion" >
                 <div className="aem-GridColumn aem-GridColumn--phone--12 phonenav" id="absolute-postion">
                     <div className="header">Filters
-                        <div>   <a onClick={() => closeNav()}>&#x2715;</a></div>
+                        <div>   <a role='button' aria-label='Close' href="javascript:void(0)" onClick={() => closeNav()}>&#x2715;</a></div>
                     </div>
 
 
@@ -207,7 +223,10 @@ const Filter = (props) => {
 
                                     optionsArray.slice(0, 4).map(element =>
 
-                                        <li><input type="checkbox" /> <span>{element.label}</span></li>
+                                        <li>
+                                              <input type="checkbox" id={element.label+"att4"} value={element.label+"att4"} name={element.label+"att4"} />
+                                        <label for={element.label+"att4"}>{element.label}</label>
+                                        </li>
                                     )
 
                                 }
@@ -227,7 +246,11 @@ const Filter = (props) => {
 
                                     optionsArray.slice(0, 6).map(element =>
 
-                                        <li><input type="checkbox" /> <span>{element.label}</span></li>
+                                        <li>
+                                               <input type="checkbox"  id={element.label+"att5"} value={element.label+"att5"} name={element.label+"att5"} />
+                                        <label for={element.label+"att5"}>{element.label}</label>
+
+                                        </li>
                                     )
                                 }
 
@@ -260,7 +283,10 @@ const Filter = (props) => {
 
                                     optionsArray.slice(0, 8).map(element =>
 
-                                        <li><input type="checkbox" /> <span>{element.label}</span></li>
+                                        <li>
+                                              <input type="checkbox"  id={element.label+"att6"} value={element.label+"att6"} name={element.label+"att6"} />
+                                        <label for={element.label+"att6"}>{element.label}</label>
+                                        </li>
                                     )
                                 }
 
@@ -274,6 +300,7 @@ const Filter = (props) => {
 
                 </div>
             </div>
+
         </>
 
 

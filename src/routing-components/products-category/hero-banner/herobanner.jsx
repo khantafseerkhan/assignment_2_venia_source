@@ -19,7 +19,7 @@ class Herobanner extends React.Component{
                 </div>
             </div>
             <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12  aem-GridColumn--phone--12 heroimg" >
-               <img src={require("../../../assets/img/heroimg.PNG")}/>
+               <img src={require("../../../assets/img/heroimg.PNG")} alt="Banner Image" />
 
                <div className="center-text-section">
                

@@ -43,7 +43,7 @@ const Productsummary = (props) => {
         <div className="aem-Grid aem-Grid--12">
 
             {props.productdata && (
-                <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--12  aem-GridColumn--phone--12">
+                <div className="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--tablet--12  aem-GridColumn--phone--12">
                     <div className="aem-Grid aem-Grid--12 product-summary">
                         <div className="aem-GridColumn aem-GridColumn--default--12">
                             <div className="flow"></div>
@@ -59,10 +59,10 @@ const Productsummary = (props) => {
                                 <div className="color-section">
                                     <div className="title-section">Color</div>
                                     <ul>
-                                        <li><button type="button" role='button' aria-label='color'>color</button></li>
-                                        <li><button type="button" role='button' aria-label='color'>color</button></li>
-                                        <li><button type="button" role='button' aria-label='color'>color</button></li>
-                                        <li><button type="button" role='button' aria-label='color'>color</button></li>
+                                        <li><button type="button"  aria-label='color' style={{backgroundColor:"black"}}></button></li>
+                                        <li><button type="button"  aria-label='color' style={{backgroundColor:"blue"}}></button></li>
+                                        <li><button type="button"  aria-label='color' style={{backgroundColor:"green"}}></button></li>
+                                        <li><button type="button"  aria-label='color' style={{backgroundColor:"red"}}></button></li>
 
                                     </ul>
                                 </div>
@@ -71,22 +71,26 @@ const Productsummary = (props) => {
                                     <div className="title-section">Size</div>
 
                                     <ul>
-                                        <li><button  type="button" role='button' aria-label='XS Size'>XS</button></li>
-                                        <li><button   type="button" role='button' aria-label='S Size'>S</button></li>
-                                        <li><button  type="button" role='button' aria-label='M Size'>M</button></li>
-                                        <li><button  type="button" role='button' aria-label='L Size'>L</button></li>
-                                        <li><button   type="button" role='button' aria-label='XL Size'>XL</button></li>
+                                        <li><button  type="button" aria-label='XS Size'>XS</button></li>
+                                        <li><button   type="button"  aria-label='S Size'>S</button></li>
+                                        <li><button  type="button"  aria-label='M Size'>M</button></li>
+                                        <li><button  type="button"  aria-label='L Size'>L</button></li>
+                                        <li><button   type="button"  aria-label='XL Size'>XL</button></li>
 
 
                                     </ul>
                                 </div>
 
                                 <div className="quntity-section">
-                                    <div className="title-section">Quantity</div>
+                                    {/* <div className="title-section">Quantity</div> */}
+                                    <label className="title-section" for="quantityvalue">Quantity</label>
+                                    <br /><br />
 
-                                    <button   type="button" role='button' aria-label='Quantity Decreament' onClick={() => decQuantity()}>-</button>
-                                    <input type="text" value={quantity} />
-                                    <button onClick={() => incQuantity()}   type="button" role='button' aria-label='Quantity Increament'>+</button>
+                                    <button   type="button" aria-label='Quantity Decreament' onClick={() => decQuantity()}>-</button>
+                                   
+                                  
+                                    <input type="text" id="quantityvalue" value={quantity} name="quantityvalue" />
+                                    <button onClick={() => incQuantity()}   type="button" aria-label='Quantity Increament'>+</button>
 
 
                                 </div>
@@ -94,7 +98,7 @@ const Productsummary = (props) => {
 
                                 <div className="add-section">
 
-                                    <button type="button" onClick={() => AddProduct(props.productdata)}  role='button' aria-label='Add To Cart'>Add To Cart</button>
+                                    <button type="button" onClick={() => AddProduct(props.productdata)} aria-label='Add To Cart'>Add To Cart</button>
 
                                     <div>
                                         <a href="javascript:void(0)" role='button' aria-label='Save for Later'><img alt="save for later" src={require("../../../assets/img/heart.png")}   /><span>Save</span></a>

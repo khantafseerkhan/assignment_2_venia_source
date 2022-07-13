@@ -16,7 +16,7 @@ const Layout=()=> {
          
                 <header><Header /></header>
 
-                 <div  className="aem-Grid aem-Grid--12"> 
+                 <div  className="aem-Grid aem-Grid--12" style={{paddingTop:"25px"}}> 
                  <Routing />
                   </div> 
 

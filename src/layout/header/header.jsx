@@ -78,9 +78,9 @@ import { useEffect } from "react";
 
                         <nav className="navigation right-nav">
                             <ul className="flex">
-                                <li><a  href="javascript:void(0)"><img alt="Search" className="search" src={require("../../assets/img/search.png")} /> <span className="tab-hide phone-hide">Search</span></a></li>
-                                <li className="phone-hide"><a  href="javascript:void(0)"><img className="search" alt="User Profile" src={require("../../assets/img/user.png")} /> <span className="tab-hide" >Sign in</span></a></li>
-                                <li><a  href="javascript:void(0)"><img alt="Shopping Cart" className="search" onClick={()=>goToCart()} src={require("../../assets/img/shopping-bag.png")} />
+                                <li><a role='button' aria-label='Search' href="javascript:void(0)"><img alt="Search" className="search" src={require("../../assets/img/search.png")} /> <span className="tab-hide phone-hide">Search</span></a></li>
+                                <li className="phone-hide" ><a  role='button' aria-label='Profile' href="javascript:void(0)"><img className="search" alt="User Profile" src={require("../../assets/img/user.png")} /> <span className="tab-hide" >Sign in</span></a></li>
+                                <li><a  href="javascript:void(0)" role='button' aria-label='Cart' ><img alt="Shopping Cart" className="search" onClick={()=>goToCart()} src={require("../../assets/img/shopping-bag.png")} />
                                 {
                                     cartCount>0 && (
                                         <span className="badge">{cartCount}</span>

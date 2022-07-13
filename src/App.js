@@ -10,7 +10,7 @@ const App=() =>{
     <>
 
 <div id="loadingsection" className='loadingsection' style={{display:"none"}}>
-    <img src={require("./assets/img/loadericon.gif")} />
+    <img src={require("./assets/img/loadericon.gif")}  alt="Loading...."/>
 
 </div>
 {/* <Routing /> */}

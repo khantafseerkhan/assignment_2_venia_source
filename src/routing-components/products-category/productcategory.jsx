@@ -134,7 +134,7 @@ const ProductCategory = (props) => {
                         <div className="product-top">
                             <img alt="up arrow" src={require("../../assets/img/arrow-up.png")} />
                             <img alt="down arrow" src={require("../../assets/img/arrow-down.png")} />
-                            <a >Sort</a>
+                            <a  href="javascript:void(0)" role='button' aria-label='Sort'>Sort</a>
 
 
                         </div>
@@ -148,7 +148,7 @@ const ProductCategory = (props) => {
                     <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--6 aem-GridColumn--phone--6 right padding10 tab-hide phone-hide">
 
                         <div className="product-top right">
-                            <select className="select-form" onChange={(e) => sortChange(e)}>
+                            <select className="select-form" onChange={(e) => sortChange(e)} name="sortprice">
                                 <option selected>Sort by Price</option>
                                 <option value={"lowest"}>Lowest</option>
                                 <option value={"highest"}>Highest</option>

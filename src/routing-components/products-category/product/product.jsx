@@ -26,7 +26,7 @@ const Products = (props) => {
                         props.allproduct.map(element => {
                             return (
                                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--6 aem-GridColumn--phone--6 center padding10">
-                                    <div className="product-card " onClick={() => redirect(element)}>
+                                    <div className="product-card " onClick={() => redirect(element)}  role='button' aria-label={element.title}>
                                         <div className="card-body">
                                             <img src={element.image} alt={element.title} />
                                         </div>

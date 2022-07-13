@@ -56,7 +56,7 @@ const Addedproduct = (props) => {
                 <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn aem-GridColumn--tablet--2 aem-GridColumn aem-GridColumn--phone--2">
 
                     <div className="image-container">
-                        <img src={element.image} alt="" />
+                        <img src={element.image} alt={element.title} />
                         </div>
                 </div>
 
@@ -67,7 +67,10 @@ const Addedproduct = (props) => {
 
                     <div className="aem-Grid aem-Grid--12">
                         <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn aem-GridColumn--tablet--10 aem-GridColumn aem-GridColumn--phone--10 details padding14">
-                            <div className="title-section">{element.title}</div>
+                            <div className="title-section">
+                            <label for={element.id}>{element.title} </label>
+
+                                </div>
                             <div className="sub-section">
                                 <span>size :</span><span>XL</span><br />
                                 <span>color :</span><span>Red</span><br />
@@ -78,10 +81,15 @@ const Addedproduct = (props) => {
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn aem-GridColumn--tablet--10 aem-GridColumn aem-GridColumn--phone--10 quantitycontainer padding14">
                         <div className="quntity-section">
+                        <label for={element.id}>&nbsp; </label>
+                                   
+                                 <button onClick={()=>quantDec(element,index)} type="button"  aria-label='Decreament'>-</button>
+                               
+                                 <input type="text" id={element.id} name={element.id} value={element.quantity}  disabled={true}/>
+                                
 
-                                 <button onClick={()=>quantDec(element,index)}>-</button>
-                                 <input type="text" value={element.quantity} id={element.id}/>
-                                 <button onClick={()=>quantInc(element,index)}>+</button>
+                              
+                                 <button onClick={()=>quantInc(element,index)} aria-label='Increament' type="button">+</button>
                             
                             
                              </div>
@@ -93,20 +101,20 @@ const Addedproduct = (props) => {
                 <div className="aem-GridColumn aem-GridColumn--default--2  aem-GridColumn aem-GridColumn--tablet--1 aem-GridColumn aem-GridColumn--phone--1 edit-section">
                    <ul className="tab-hide phone-hide">
                     <li>
-                        <a ><img src={require("../../../assets/img/edit-2.png")} /> <span>Edit item</span></a>
+                        <a role='button' aria-label='Edit Item' href="javascript:void(0)"><img src={require("../../../assets/img/edit-2.png")} alt="Edit Item"/> <span>Edit item</span></a>
                     </li>
 
                     <li>
-                        <a ><img src={require("../../../assets/img/trash-2.png")}  /> <span>Remove</span></a>
+                        <a role='button' aria-label='Remove' href="javascript:void(0)" ><img  src={require("../../../assets/img/trash-2.png")}  alt="Remove"/> <span>Remove</span></a>
                     </li>
 
 
                     <li>
-                        <a ><img src={require("../../../assets/img/heart.png")}/> <span>Save for later</span></a>
+                        <a role='button' aria-label='Save for Later' href="javascript:void(0)"><img src={require("../../../assets/img/heart.png")} alt="Save for Later" /> <span>Save for later</span></a>
                     </li>
                     </ul>
                     
-                    <img src={require("../../../assets/img/more-horizontal.png")} className="tab-show phone-show"/>
+                    <img src={require("../../../assets/img/more-horizontal.png")} alt="menu options" className="tab-show phone-show"/>
 
                 </div>
                 {/* <div className="aem-GridColumn aem-GridColumn--default--4"></div> */}
