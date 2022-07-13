@@ -17,7 +17,9 @@ export default class Routing extends React.Component{
 
 
       <Routes>
+      <Route path="" element={<ProductCategory />} />
       <Route path="assignment_2_venia" element={<ProductCategory />} />
+
       {/* <Route path="singleproduct" element={<Singleproduct />} /> */}
 
       <Route path="singleproduct/:id" element={<Singleproduct /> } />

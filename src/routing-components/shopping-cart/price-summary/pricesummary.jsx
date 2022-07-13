@@ -47,8 +47,8 @@ const Pricesummary = (props) => {
                 </ul>
             </div>
 
-            <div className="checkout center"><button type="button">checkout</button></div>
-            <div className="pay center"><img src={require("../../../assets/img/PP_BTN.png")}/></div>
+            <div className="checkout center"><button type="button"  role='button' aria-label='Check Out'>checkout</button></div>
+            <div className="pay center"><img src={require("../../../assets/img/PP_BTN.png")} alt="Pay Pal" role='button' aria-label='Pay Pal'/></div>
 
 
         </div>

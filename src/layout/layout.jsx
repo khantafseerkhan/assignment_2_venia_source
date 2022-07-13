@@ -2,7 +2,6 @@ import React from "react";
 import Footer from "./footer/footer";
 import Header from "./header/header";
 import Routing from "./routes/routing";
-import { Outlet, Link } from "react-router-dom";
 
 
 const Layout=()=> {

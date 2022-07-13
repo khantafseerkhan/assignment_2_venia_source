@@ -2,9 +2,6 @@ import '../src/assets/css/main.css';
 import '../src/assets/css/aemgrid.css';
 import Layout from './layout/layout';
 import {useSelector , useDispatch} from "react-redux";
-import hasClass from "./assets/customjs/custom";
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Routing from './layout/routes/routing';
 
 const App=() =>{
   const myState=useSelector((state) => state.changeTheState);
