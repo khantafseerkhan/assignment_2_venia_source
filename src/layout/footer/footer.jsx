@@ -75,7 +75,7 @@ export default class Footer extends React.Component {
 
             </div>
 
-            <div className="aem-Grid aem-Grid--12 footer-bottom-container">
+            <div className="aem-Grid aem-Grid--12 footer-bottom-container tab-hide phone-hide">
                 <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--4 aem-GridColumn--phone--12  footer-bottom order-3">
                 <div className="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--6 center" >
                         <span className="logo"><span className="right-slash">\</span><span className="left-slash">/</span>ENIA</span>
@@ -98,6 +98,27 @@ export default class Footer extends React.Component {
                             </ul>
                         </div>
                 </div>
+            </div>
+
+
+            <div className="aem-Grid aem-Grid--12 footer-bottom-container tab-show phone-show">
+                
+
+            <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12  footer-bottom order-2">
+                        <div className="list-terms">
+                            <ul style={{    justifyContent: "center"}}>
+                                <li><a  href="javascript:void(0)"  role='button' aria-label='Terms of Use'>Terms of Use</a></li>
+                                <li><a  href="javascript:void(0)"  role='button' aria-label='Privacy Policy'>Privacy Policy</a></li>
+
+                            </ul>
+                        </div>
+                </div>
+                <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--12 aem-GridColumn--phone--12  footer-bottom order-1">
+                        <div className="desc-section" style={{    justifyContent: "center"}}>
+                        &#169; Company Name Address ,Ave ,City Name ,State ZIP 
+                        </div>
+                </div>
+
             </div>
 
 
